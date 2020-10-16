@@ -1,8 +1,9 @@
-function power(n,m){
-if(m === 0)
-  return 1;
-else
-  return n*power(n,m-1);
+function carrnbre(n,m){
+ if(m === 0)
+   return 1;
+ else if(m === 1)
+   return n;
+ else
+   return n*carrnbre(n,m -1);
 }
-power(2,4);
-
+carrnbre(0,1);
